@@ -1,0 +1,39 @@
+<!--  
+<div class="container-fluid">
+	<h2 class="text-muted">
+		Lord Rama <small>His Holiness</small>
+	</h2>
+	<div class="row">
+		<div class="col-md-12">
+			<carousel [interval]="myInterval"> <slide
+				*ngFor="let slidez of slides;let index=index"
+				[active]="slidez.active"> <img [src]="slidez.image">
+			<div class="carousel-caption">
+		
+			</div>
+			</slide> <i class="fa fa-chevron-left left carousel-control"></i> <i
+				class="fa fa-chevron-right right carousel-control"></i> </carousel>
+		</div>
+	</div>
+	<hr>
+</div>
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div img{ display: block;float: left;margin-right: 20px;}
+
+</style>
+</head>
+<body>
+<h2>{{albname}}</h2>
+<div *ngFor="let image of _albums; let i=index">
+
+  <img [src]="image.src" (click)="open(i)" width = "100px" height = "100px" />
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<button class="btn btn-default" id="toggle-sidebar" type="button"
+	(click)="eventCalled()">&#9776;</button>
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+	<ul class="list-group">
+		<a routerLink="/dashboard/home"
+			[routerLinkActive]="['router-link-active']" class="list-group-item">
+			<i class="fa fa-fw fa-home"></i> Home
+		</a>
+		<a [routerLink]="['chart']"
+			[routerLinkActive]="['router-link-active']" class="list-group-item">
+			<i class="fa fa-fw fa-info"></i> AboutUs
+		</a>
+		<a [routerLink]="['tables']"
+			[routerLinkActive]="['router-link-active']" class="list-group-item">
+			<i class="fa fa-fw fa-calendar"></i> Events
+		</a>
+		<a [routerLink]="['forms']"
+			[routerLinkActive]="['router-link-active']" class="list-group-item">
+			<i class="fa fa-fw fa-camera"></i> Photos
+		</a>
+		<a [routerLink]="['element']"
+			[routerLinkActive]="['router-link-active']" class="list-group-item">
+			<i class="fa fa-fw fa-credit-card"></i> Donations
+		</a>
+		<a [routerLink]="['grid']" [routerLinkActive]="['router-link-active']"
+			class="list-group-item"> <i class="fa fa-fw fa-envelope"></i>
+			Contact Us
+		</a>
+	<!--  <a [routerLink]="['components']"
+			[routerLinkActive]="['router-link-active']" class="list-group-item">
+			<i class="fa fa-th-list"></i> &nbsp;Component
+		</a>
+	<div class="nested-menu">
+			<a class="list-group-item" (click)="addExpandClass('pages')"> <span><i
+					class="fa fa-plus"></i> &nbsp; Menu</span>
+			</a>
+			<li class="nested" [ngClass]="{'expand' : showMenu === 'pages' }">
+				<ul class="submenu">
+					<li><a href=""><span>Submenu</span></a></li>
+					<li><a href=""><span>Submenu</span></a></li>
+				</ul>
+			</li>
+		</div> 	
+	 	<a [routerLink]="['blankpage']"
+			[routerLinkActive]="['router-link-active']" class="list-group-item">
+			<i class="fa fa-archive"></i> &nbsp;Rama Charitra
+		</a>
+		<a class="list-group-item more-themes" href="http://www.strapui.com/">
+			More Themes </a> -->
+	</ul>
+</nav>
